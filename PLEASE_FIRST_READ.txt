@@ -1,0 +1,23 @@
+
+0. 여러 댓글에서 사용된 부적절한 단어(비속어 등)를 골라냈습니다.
+
+1. [텍스트 출처]
+https://github.com/kocohub/korean-hate-speech
+
+korean-hate-speech-master\unlabeled 의 unlabeled_comments_1, ... , unlabeled_comments_5 까지의 파일을 사용했습니다.
+
+2. [사용 라이브러리]
+konlpy의 okt(open korean text)를 사용했습니다.
+
+3. [진행 과정]
+ 3-1> unlabeled_comments 내의 모든 문장을 okt를 사용해서 쪼개기
+ 3-2> 이 가운데 tag: noun 에 해당하는 약 14만 개의 단어 가운데 문제가 있어 보이는 단어를 직접 골라내기.
+	(word_tag.txt)
+ 3-3> 태그를 제외한 단어만을 기록
+	(word_only.txt)
+
+4. [주의 사항]
+ 4-1> 원본 파일에서 실제로 사용된 문장을 확인하면서 작업했으나 적절하지 못할 수 있으므로 확인해보시고 단어를 추가/제거해서 사용하시기 바랍니다.
+ 4-2> okt 이외의 툴도 존재합니다. 필요하시다면 그쪽을 활용하셔도 좋을 듯합니다.
+
+작성일 : 2022-08-17
